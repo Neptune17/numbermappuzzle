@@ -9,7 +9,7 @@ def paint_map(mat, xlabel, ylabel, figname):
     xsize = mat.shape[0]
     ysize = mat.shape[1]
 
-    plt.figure(figsize=(7, 7))
+    plt.figure(figsize=(10, 10))
     my_cmap=matplotlib.colors.LinearSegmentedColormap.from_list('my_camp',[color1,color2],2)
     cs=plt.imshow(mat,cmap=my_cmap)
     
